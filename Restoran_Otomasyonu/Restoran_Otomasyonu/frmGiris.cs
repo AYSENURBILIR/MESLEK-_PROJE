@@ -70,6 +70,6 @@ namespace Restoran_Otomasyonu
 
         }
 
-       
+    
     }
 }

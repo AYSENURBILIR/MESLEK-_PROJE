@@ -10,3 +10,4 @@ C:\Users\Lenovo\OneDrive\Masaüstü\Restoran Otomasyonu\Restoran_Otomasyonu\Rest
 C:\Users\Lenovo\OneDrive\Masaüstü\Restoran Otomasyonu\Restoran_Otomasyonu\Restoran_Otomasyonu\obj\Debug\Restoran_Otomasyonu.pdb
 C:\Users\Lenovo\OneDrive\Masaüstü\Restoran Otomasyonu\Restoran_Otomasyonu\Restoran_Otomasyonu\obj\Debug\Restoran_Otomasyonu.frmMasalar.resources
 C:\Users\Lenovo\OneDrive\Masaüstü\Restoran Otomasyonu\Restoran_Otomasyonu\Restoran_Otomasyonu\obj\Debug\Restoran_Otomasyonu.frmMenu.resources
+C:\Users\Lenovo\OneDrive\Masaüstü\Restoran Otomasyonu\Restoran_Otomasyonu\Restoran_Otomasyonu\obj\Debug\Restoran_Otomasyonu.frmSiparis.resources

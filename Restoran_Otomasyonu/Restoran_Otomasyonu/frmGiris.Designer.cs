@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGiris));
             this.cbKullanici = new System.Windows.Forms.ComboBox();
             this.btnGiris = new System.Windows.Forms.Button();
             this.txtSifre = new System.Windows.Forms.TextBox();
@@ -39,6 +40,7 @@
             // 
             // cbKullanici
             // 
+            this.cbKullanici.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cbKullanici.FormattingEnabled = true;
             this.cbKullanici.Location = new System.Drawing.Point(587, 173);
             this.cbKullanici.Name = "cbKullanici";
@@ -48,10 +50,10 @@
             // 
             // btnGiris
             // 
-            this.btnGiris.BackgroundImage = global::Restoran_Otomasyonu.Properties.Resources.giris;
             this.btnGiris.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGiris.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGiris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGiris.Image = ((System.Drawing.Image)(resources.GetObject("btnGiris.Image")));
             this.btnGiris.Location = new System.Drawing.Point(604, 266);
             this.btnGiris.Name = "btnGiris";
             this.btnGiris.Size = new System.Drawing.Size(95, 47);
@@ -71,10 +73,10 @@
             // 
             // btnCikis
             // 
-            this.btnCikis.BackgroundImage = global::Restoran_Otomasyonu.Properties.Resources.cikis;
             this.btnCikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCikis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCikis.Image = ((System.Drawing.Image)(resources.GetObject("btnCikis.Image")));
             this.btnCikis.Location = new System.Drawing.Point(725, 266);
             this.btnCikis.Name = "btnCikis";
             this.btnCikis.Size = new System.Drawing.Size(95, 47);
@@ -84,10 +86,10 @@
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::Restoran_Otomasyonu.Properties.Resources.restaurant;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(587, 109);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(261, 47);
@@ -119,8 +121,7 @@
             // frmGiris
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Restoran_Otomasyonu.Properties.Resources.siyah_arkaplan;
+            this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(922, 527);
             this.Controls.Add(this.label2);

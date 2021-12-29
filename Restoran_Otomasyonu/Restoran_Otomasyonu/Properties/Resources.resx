@@ -133,9 +133,6 @@
   <data name="çıkış2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\çıkış.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="geridön" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\geridön.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="paket servis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\paket servis.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,8 +145,8 @@
   <data name="cikis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cikis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Masa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Masa1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cikis1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cikis1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="restaurant" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\restaurant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,8 +166,8 @@
   <data name="mutfak" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mutfak.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="çıkış4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\çıkış2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="kasa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kasa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="çıkış" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\çıkış.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,13 +175,19 @@
   <data name="müşteri" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\müşteri.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="geridön" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\geridön.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="çıkış4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\çıkış2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="çıkış1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\çıkış1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kasa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kasa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Masa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Masa1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cikis1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cikis1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="masa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\masa2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
