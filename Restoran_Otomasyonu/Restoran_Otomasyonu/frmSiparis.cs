@@ -31,7 +31,7 @@ namespace Restoran_Otomasyonu
             this.Close();
             frm.Show();
         }
-        //Hesap Makinesi
+        //Hesap İşlemi
         void islem(object sender, EventArgs e)
         {
             Button btn = sender as Button;

@@ -152,10 +152,29 @@ namespace Restoran_Otomasyonu
                     if (item is Button)
                     {
                         if (item.Name == "btnMasa" + dr["ID"].ToString() && dr["DURUM"].ToString() == "1")
+                        {
                             //Gelen masa ve durumu 1 ise
                             //Gelen masa 2 durum 1 ise olarak düşünülebilinir.
-                        {
 
+
+                        }
+                        else if (item.Name == "btnMasa" + dr["ID"].ToString() && dr["DURUM"].ToString() == "2")
+                        {
+                            cMasalar ms = new cMasalar();
+                            DateTime dt1 = Convert.ToDateTime(ms.SessionSum(2));
+                            DateTime dt2 = DateTime.Now;
+
+                            string st1 = Convert.ToDateTime(ms.SessionSum(2)).ToShortTimeString();
+                            string st2 = DateTime.Now.ToShortTimeString();
+
+                            DateTime t1 = dt1.AddMinutes(DateTime.Parse(st1).TimeOfDay.TotalMinutes);
+                            DateTime t2 = dt2.AddMinutes(DateTime.Parse(st2).TimeOfDay.TotalMinutes);
+
+                            var fark = t2 - t1;
+                            //item.Text = string.Format("{0}{1}}{2}",
+                            //    fark.Days > 0 ? string.Format("{0} Gün", fark.Days "",
+                            //    fark.Hours > 0 ? string.Format("{0} Gün", fark.Hours "",
+                            //    fark.Minutes>0? string.Format("{0} Dakika",fark.Minutes):"").Trim()+""
                         }
 
                     }
