@@ -156,6 +156,7 @@ namespace Restoran_Otomasyonu
                             //Gelen masa ve durumu 1 ise
                             //Gelen masa 2 durum 1 ise olarak düşünülebilinir.
 
+                            
 
                         }
                         else if (item.Name == "btnMasa" + dr["ID"].ToString() && dr["DURUM"].ToString() == "2")
@@ -171,10 +172,11 @@ namespace Restoran_Otomasyonu
                             DateTime t2 = dt2.AddMinutes(DateTime.Parse(st2).TimeOfDay.TotalMinutes);
 
                             var fark = t2 - t1;
-                            //item.Text = string.Format("{0}{1}}{2}",
-                            //    fark.Days > 0 ? string.Format("{0} Gün", fark.Days "",
-                            //    fark.Hours > 0 ? string.Format("{0} Gün", fark.Hours "",
-                            //    fark.Minutes>0? string.Format("{0} Dakika",fark.Minutes):"").Trim()+""
+                               //item.Text = string.Format("{0}{1}}{2}",
+                               //fark.Days > 0 ? string.Format("{0} Gün", fark.Days):"",
+                               //fark.Hours > 0 ? string.Format("{0} Gün", fark.Hours): "",
+                               //fark.Minutes>0? string.Format("{0} Dakika",fark.Minutes):"").Trim() + "\n\n\nMasa" + dr["ID"].ToString();
+
                         }
 
                     }
@@ -182,5 +184,6 @@ namespace Restoran_Otomasyonu
             }
             
         }
+    
     }
 }

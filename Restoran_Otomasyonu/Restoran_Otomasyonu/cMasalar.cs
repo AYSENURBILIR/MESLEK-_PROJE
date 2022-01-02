@@ -46,7 +46,7 @@ namespace Restoran_Otomasyonu
         {
             string dt = "";
             SqlConnection con = new SqlConnection(gnl.conString);
-            SqlCommand cmd = new SqlCommand("Select Tarih,MasaId from Adisyon Right Join Masalar on Adisyon.MasalarId where Masalar.DURUM=@durum and Adisyon.Durum=0", con);
+            SqlCommand cmd = new SqlCommand("Select Tarih,MasaId from adisyon Right Join Masalar on adisyon.MasalarId where Masalar.DURUM=@durum and Adisyon.Durum=0", con);
             //Masalardaki MasaId ve Adisyondaki MasaId arasında ilişki kurdum
             SqlDataReader dr = null;
             cmd.Parameters.Add("@durum", SqlDbType.Int).Value=state;
@@ -78,6 +78,42 @@ namespace Restoran_Otomasyonu
             }
             return dt;
         }
+        public int TableGetbyNumber(string TableValue)//String veri tipinde değer gönderdik
+        {
+            string aa = TableValue;
+            int lenght = aa.Length;//a'nın uzunluğunu bulduk ve lenght diye bir değişkene attık
+            return Convert.ToInt32(aa.Substring(lenght = -1, 1));//int'e çevirdik. Çünkü döndüreceğimiz değerin tipi int
+            //Substrig ile de  uzunluktan 1 eksik al ve 1. karakteri al.
+        }
 
+        public bool TableGetbyState(int ButtonName, int state)
+        {
+            bool result = false;
+            SqlConnection con = new SqlConnection(gnl.conString);
+            SqlCommand cmd = new SqlCommand("select durum from masalar where Id=@TableId and DURUM=@state", con);
+            cmd.Parameters.Add("@TableId", SqlDbType.Int).Value = ButtonName;
+            cmd.Parameters.Add("@TableId", SqlDbType.Int).Value = state;
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+                result = Convert.ToBoolean(cmd.ExecuteScalar());
+            }
+            catch (SqlException ex)
+            {
+                string hata = ex.Message;
+                throw;
+            }
+            finally
+            {
+                con.Dispose();
+                con.Close();
+            }
+
+            return result;
+
+        }
     }
 }
