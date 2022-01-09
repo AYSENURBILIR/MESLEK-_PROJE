@@ -76,18 +76,19 @@ namespace Restoran_Otomasyonu
         }
         private void frmSiparis_Load(object sender, EventArgs e)
         {
-            lblMasaNo.Text = cGeneral._ButtonValue;
-            cMasalar ms = new cMasalar();
-            int tableId = ms.TableGetbyNumber(cGeneral._ButtonName);
+            /*    lblMasaNo.Text = cGeneral._ButtonValue;
+                 cMasalar ms = new cMasalar();
+                 int tableId = ms.TableGetbyNumber(cGeneral._ButtonName);
 
-            if (ms.TableGetbyState(tableId,2)==true||ms.TableGetbyState(tableId,4)==true)
-            {
-                cAdisyon Ad = new cAdisyon();
-                int AdditionId = Ad.getByAddition(tableId);
-                cSiparis orders = new cSiparis();
-                orders.getByOrder(lvSiparisler, AdditionId);
-                //17.videoda kaldım
-            }
+                 if (ms.TableGetbyState(tableId,2)==true||ms.TableGetbyState(tableId,4)==true)
+                 {
+                    cAdisyon Ad = new cAdisyon();
+                    int AdditionId = Ad.getByAddition(tableId);
+                    cSiparis orders = new cSiparis();
+                     orders.getByOrder(lvSiparisler, AdditionId);
+
+                 }
+               */
 
             btn1.Click += new EventHandler(islem);
             btn2.Click += new EventHandler(islem);
@@ -99,7 +100,15 @@ namespace Restoran_Otomasyonu
             btn8.Click += new EventHandler(islem);
             btn9.Click += new EventHandler(islem);
             btn0.Click += new EventHandler(islem);
-            //16.videoda kaldım
+           
+        }
+
+        private void btnAnaYemek1_Click(object sender, EventArgs e)
+        {
+            cUrunCesitleri Uc = new cUrunCesitleri();
+            Uc.getbyProductTypes(lvMenu, btnAnaYemek1);
+
+            //17.video 6.dkde kaldım
         }
     }
 }

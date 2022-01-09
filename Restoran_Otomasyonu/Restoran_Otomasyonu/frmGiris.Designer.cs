@@ -50,15 +50,16 @@
             // 
             // btnGiris
             // 
+            this.btnGiris.BackColor = System.Drawing.Color.LightCoral;
             this.btnGiris.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGiris.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGiris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGiris.Image = ((System.Drawing.Image)(resources.GetObject("btnGiris.Image")));
             this.btnGiris.Location = new System.Drawing.Point(604, 266);
             this.btnGiris.Name = "btnGiris";
             this.btnGiris.Size = new System.Drawing.Size(95, 47);
             this.btnGiris.TabIndex = 1;
-            this.btnGiris.UseVisualStyleBackColor = true;
+            this.btnGiris.Text = "Giriş";
+            this.btnGiris.UseVisualStyleBackColor = false;
             this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
             // txtSifre
@@ -73,15 +74,16 @@
             // 
             // btnCikis
             // 
+            this.btnCikis.BackColor = System.Drawing.Color.LightCoral;
             this.btnCikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCikis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCikis.Image = ((System.Drawing.Image)(resources.GetObject("btnCikis.Image")));
             this.btnCikis.Location = new System.Drawing.Point(725, 266);
             this.btnCikis.Name = "btnCikis";
             this.btnCikis.Size = new System.Drawing.Size(95, 47);
             this.btnCikis.TabIndex = 4;
-            this.btnCikis.UseVisualStyleBackColor = true;
+            this.btnCikis.Text = "Çıkış";
+            this.btnCikis.UseVisualStyleBackColor = false;
             this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
             // button1

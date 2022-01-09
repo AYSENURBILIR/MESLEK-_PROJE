@@ -78,14 +78,14 @@ namespace Restoran_Otomasyonu
             }
             return dt;
         }
-        public int TableGetbyNumber(string TableValue)//String veri tipinde değer gönderdik
-        {
-            string aa = TableValue;
-            int lenght = aa.Length;//a'nın uzunluğunu bulduk ve lenght diye bir değişkene attık
-            return Convert.ToInt32(aa.Substring(lenght = -1, 1));//int'e çevirdik. Çünkü döndüreceğimiz değerin tipi int
-            //Substrig ile de  uzunluktan 1 eksik al ve 1. karakteri al.
-        }
-
+        /* public int TableGetbyNumber(string TableValue)//String veri tipinde değer gönderdik
+         {
+             string aa = TableValue;
+             int lenght = aa.Length;//a'nın uzunluğunu bulduk ve lenght diye bir değişkene attık
+             return Convert.ToInt32(aa.Substring(lenght = -1, 1));//int'e çevirdik. Çünkü döndüreceğimiz değerin tipi int
+                                                                  //Substrig ile de  uzunluktan 1 eksik al ve 1. karakteri al.
+         }
+         */
         public bool TableGetbyState(int ButtonName, int state)
         {
             bool result = false;

@@ -52,6 +52,7 @@
     <Compile Include="cPersonelHareketleri.cs" />
     <Compile Include="cPersoneller.cs" />
     <Compile Include="cSiparis.cs" />
+    <Compile Include="cUrunCesitleri.cs" />
     <Compile Include="frmGiris.cs">
       <SubType>Form</SubType>
     </Compile>

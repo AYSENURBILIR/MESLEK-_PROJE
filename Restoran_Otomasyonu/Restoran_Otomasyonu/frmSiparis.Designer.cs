@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSiparis));
             this.lblMasaNo = new System.Windows.Forms.Label();
-            this.btnAnaYemek = new System.Windows.Forms.Button();
+            this.btnAnaYemek1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnAraSicak = new System.Windows.Forms.Button();
             this.btnMakarna = new System.Windows.Forms.Button();
@@ -40,7 +40,7 @@
             this.btnTatlılar = new System.Windows.Forms.Button();
             this.btnIcecekler = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lvMenu = new System.Windows.Forms.ListView();
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -88,20 +88,21 @@
             this.lblMasaNo.TabIndex = 0;
             this.lblMasaNo.Text = "MASA 1";
             // 
-            // btnAnaYemek
+            // btnAnaYemek1
             // 
-            this.btnAnaYemek.BackColor = System.Drawing.Color.White;
-            this.btnAnaYemek.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAnaYemek.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAnaYemek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAnaYemek.ForeColor = System.Drawing.Color.Transparent;
-            this.btnAnaYemek.Image = ((System.Drawing.Image)(resources.GetObject("btnAnaYemek.Image")));
-            this.btnAnaYemek.Location = new System.Drawing.Point(6, 25);
-            this.btnAnaYemek.Name = "btnAnaYemek";
-            this.btnAnaYemek.Size = new System.Drawing.Size(119, 74);
-            this.btnAnaYemek.TabIndex = 0;
-            this.btnAnaYemek.Text = "Ana Yemek";
-            this.btnAnaYemek.UseVisualStyleBackColor = false;
+            this.btnAnaYemek1.BackColor = System.Drawing.Color.White;
+            this.btnAnaYemek1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAnaYemek1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAnaYemek1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAnaYemek1.ForeColor = System.Drawing.Color.Transparent;
+            this.btnAnaYemek1.Image = ((System.Drawing.Image)(resources.GetObject("btnAnaYemek1.Image")));
+            this.btnAnaYemek1.Location = new System.Drawing.Point(6, 25);
+            this.btnAnaYemek1.Name = "btnAnaYemek1";
+            this.btnAnaYemek1.Size = new System.Drawing.Size(119, 74);
+            this.btnAnaYemek1.TabIndex = 0;
+            this.btnAnaYemek1.Text = "Ana Yemek";
+            this.btnAnaYemek1.UseVisualStyleBackColor = false;
+            this.btnAnaYemek1.Click += new System.EventHandler(this.btnAnaYemek1_Click);
             // 
             // groupBox1
             // 
@@ -113,7 +114,7 @@
             this.groupBox1.Controls.Add(this.btnSalata);
             this.groupBox1.Controls.Add(this.btnTatlılar);
             this.groupBox1.Controls.Add(this.btnIcecekler);
-            this.groupBox1.Controls.Add(this.btnAnaYemek);
+            this.groupBox1.Controls.Add(this.btnAnaYemek1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(40, 114);
@@ -231,7 +232,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.listView1);
+            this.groupBox2.Controls.Add(this.lvMenu);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(389, 43);
@@ -241,20 +242,20 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Menü";
             // 
-            // listView1
+            // lvMenu
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvMenu.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(6, 32);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(400, 203);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.lvMenu.GridLines = true;
+            this.lvMenu.HideSelection = false;
+            this.lvMenu.Location = new System.Drawing.Point(6, 31);
+            this.lvMenu.Name = "lvMenu";
+            this.lvMenu.Size = new System.Drawing.Size(400, 203);
+            this.lvMenu.TabIndex = 0;
+            this.lvMenu.UseCompatibleStateImageBehavior = false;
+            this.lvMenu.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader2
             // 
@@ -264,7 +265,7 @@
             // columnHeader3
             // 
             this.columnHeader3.Text = "Ürün No";
-            this.columnHeader3.Width = 122;
+            this.columnHeader3.Width = 113;
             // 
             // columnHeader4
             // 
@@ -607,7 +608,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblMasaNo;
-        private System.Windows.Forms.Button btnAnaYemek;
+        private System.Windows.Forms.Button btnAnaYemek1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnAraSicak;
         private System.Windows.Forms.Button btnMakarna;
@@ -617,7 +618,7 @@
         private System.Windows.Forms.Button btnTatlılar;
         private System.Windows.Forms.Button btnIcecekler;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lvMenu;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
