@@ -97,6 +97,7 @@ namespace Restoran_Otomasyonu
             {
                 if (con.State == ConnectionState.Closed)
                 {
+                    
                     con.Open();
                 }
                 result = Convert.ToBoolean(cmd.ExecuteScalar());

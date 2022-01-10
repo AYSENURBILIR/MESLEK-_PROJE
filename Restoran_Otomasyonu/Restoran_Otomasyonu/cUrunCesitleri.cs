@@ -35,18 +35,22 @@ namespace Restoran_Otomasyonu
         #endregion
         public void getbyProductTypes(ListView Cesitler, Button btn)
         {
+            
             Cesitler.Items.Clear();
             SqlConnection conn = new SqlConnection(gnl.conString);
-            SqlCommand comm = new SqlCommand("Select URUNAD, FIYAT, urunler.ID from kategoriler Inner Join urunler on kategoriler.ID=urunler.KATEGORIID Where urunler.KATEGORIID = @KATEGORIID", conn);
+            //SqlCommand comm = new SqlCommand("SELECT URUNAD, FIYAT,urunler.ID FROM urunler INNER JOIN kategoriler ON urunler.ID = kategoriler.ID", conn);
+            //SqlCommand comm = new SqlCommand("Select URUNAD, FIYAT, urunler.ID from kategoriler Inner Join urunler on kategoriler.ID=urunler.KATEGORIID Where urunler.KATEGORIID = @KATEGORIID", conn);
+           SqlCommand comm = new SqlCommand("Select * from urunler ", conn);
             /*Bize ürünün adı fiyatı ve ıd'si lazım.
              Kategoriler tablosu ile Ürünler tablosunu birleştir.
             Kategorilerdeki Id ve Ürünlerdeki Kategori Id */
             string aa = btn.Name;
             int uzunluk = aa.Length;
 
-            comm.Parameters.Add("@KATEGORIID", SqlDbType.Int).Value = aa.Substring(uzunluk - 1, 1);//Uzunluğunu buluyoruz.
+            //comm.Parameters.Add("@KATEGORIID", SqlDbType.Int).Value = aa.Substring(uzunluk - 1, 1);//Uzunluğunu buluyoruz.
             if (conn.State == ConnectionState.Closed)
             {
+                
                 conn.Open();
 
             }
@@ -54,10 +58,11 @@ namespace Restoran_Otomasyonu
             int i = 0;
             while (dr.Read())
             {
-                Cesitler.Items.Add(dr["URUNAD"].ToString());//1.'yi ekledi
-                Cesitler.Items[i].SubItems.Add(dr["FIYAT"].ToString());//0.'nın 2.Kolonuna ekler
-                Cesitler.Items[i].SubItems.Add(dr["ID"].ToString());//0.'nın 3. Kolonuna ekler.
-                                                                    //Örnek: URUNAD FIYAT URUNID
+               
+                Cesitler.Items.Add(dr["URUNAD"].ToString());
+                 Cesitler.Items[i].SubItems.Add(dr["FIYAT"].ToString());
+                 Cesitler.Items[i].SubItems.Add(dr["ID"].ToString());
+                  
                 i++;
 
             }

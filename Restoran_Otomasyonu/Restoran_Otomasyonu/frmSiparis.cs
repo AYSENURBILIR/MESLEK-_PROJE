@@ -102,13 +102,12 @@ namespace Restoran_Otomasyonu
             btn0.Click += new EventHandler(islem);
            
         }
+        cUrunCesitleri Uc = new cUrunCesitleri();
 
-        private void btnAnaYemek1_Click(object sender, EventArgs e)
+        private void btnYemekler_Click(object sender, EventArgs e)
         {
-            cUrunCesitleri Uc = new cUrunCesitleri();
-            Uc.getbyProductTypes(lvMenu, btnAnaYemek1);
-
-            //17.video 6.dkde kaldım
+            
+            Uc.getbyProductTypes(lvMenu, btnYemekler);
         }
     }
 }

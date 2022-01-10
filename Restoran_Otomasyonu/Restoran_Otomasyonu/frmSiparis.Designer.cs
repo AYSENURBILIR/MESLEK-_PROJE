@@ -30,15 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSiparis));
             this.lblMasaNo = new System.Windows.Forms.Label();
-            this.btnAnaYemek1 = new System.Windows.Forms.Button();
+            this.btnYemekler = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnAraSicak = new System.Windows.Forms.Button();
-            this.btnMakarna = new System.Windows.Forms.Button();
-            this.btnCorba = new System.Windows.Forms.Button();
-            this.btnFastFood = new System.Windows.Forms.Button();
-            this.btnSalata = new System.Windows.Forms.Button();
-            this.btnTatlılar = new System.Windows.Forms.Button();
-            this.btnIcecekler = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lvMenu = new System.Windows.Forms.ListView();
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -88,33 +81,26 @@
             this.lblMasaNo.TabIndex = 0;
             this.lblMasaNo.Text = "MASA 1";
             // 
-            // btnAnaYemek1
+            // btnYemekler
             // 
-            this.btnAnaYemek1.BackColor = System.Drawing.Color.White;
-            this.btnAnaYemek1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAnaYemek1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAnaYemek1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAnaYemek1.ForeColor = System.Drawing.Color.Transparent;
-            this.btnAnaYemek1.Image = ((System.Drawing.Image)(resources.GetObject("btnAnaYemek1.Image")));
-            this.btnAnaYemek1.Location = new System.Drawing.Point(6, 25);
-            this.btnAnaYemek1.Name = "btnAnaYemek1";
-            this.btnAnaYemek1.Size = new System.Drawing.Size(119, 74);
-            this.btnAnaYemek1.TabIndex = 0;
-            this.btnAnaYemek1.Text = "Ana Yemek";
-            this.btnAnaYemek1.UseVisualStyleBackColor = false;
-            this.btnAnaYemek1.Click += new System.EventHandler(this.btnAnaYemek1_Click);
+            this.btnYemekler.BackColor = System.Drawing.Color.White;
+            this.btnYemekler.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnYemekler.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnYemekler.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnYemekler.ForeColor = System.Drawing.Color.Transparent;
+            this.btnYemekler.Image = ((System.Drawing.Image)(resources.GetObject("btnYemekler.Image")));
+            this.btnYemekler.Location = new System.Drawing.Point(65, 115);
+            this.btnYemekler.Name = "btnYemekler";
+            this.btnYemekler.Size = new System.Drawing.Size(119, 74);
+            this.btnYemekler.TabIndex = 0;
+            this.btnYemekler.Text = "Yemekler";
+            this.btnYemekler.UseVisualStyleBackColor = false;
+            this.btnYemekler.Click += new System.EventHandler(this.btnYemekler_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.btnAraSicak);
-            this.groupBox1.Controls.Add(this.btnMakarna);
-            this.groupBox1.Controls.Add(this.btnCorba);
-            this.groupBox1.Controls.Add(this.btnFastFood);
-            this.groupBox1.Controls.Add(this.btnSalata);
-            this.groupBox1.Controls.Add(this.btnTatlılar);
-            this.groupBox1.Controls.Add(this.btnIcecekler);
-            this.groupBox1.Controls.Add(this.btnAnaYemek1);
+            this.groupBox1.Controls.Add(this.btnYemekler);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(40, 114);
@@ -123,111 +109,6 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Menü";
-            // 
-            // btnAraSicak
-            // 
-            this.btnAraSicak.BackColor = System.Drawing.Color.White;
-            this.btnAraSicak.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAraSicak.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAraSicak.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAraSicak.ForeColor = System.Drawing.Color.Transparent;
-            this.btnAraSicak.Image = ((System.Drawing.Image)(resources.GetObject("btnAraSicak.Image")));
-            this.btnAraSicak.Location = new System.Drawing.Point(140, 265);
-            this.btnAraSicak.Name = "btnAraSicak";
-            this.btnAraSicak.Size = new System.Drawing.Size(119, 74);
-            this.btnAraSicak.TabIndex = 7;
-            this.btnAraSicak.Text = "Ara Sıcak";
-            this.btnAraSicak.UseVisualStyleBackColor = false;
-            // 
-            // btnMakarna
-            // 
-            this.btnMakarna.BackColor = System.Drawing.Color.White;
-            this.btnMakarna.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMakarna.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMakarna.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnMakarna.ForeColor = System.Drawing.Color.Transparent;
-            this.btnMakarna.Image = ((System.Drawing.Image)(resources.GetObject("btnMakarna.Image")));
-            this.btnMakarna.Location = new System.Drawing.Point(6, 265);
-            this.btnMakarna.Name = "btnMakarna";
-            this.btnMakarna.Size = new System.Drawing.Size(119, 74);
-            this.btnMakarna.TabIndex = 6;
-            this.btnMakarna.Text = "Makarna";
-            this.btnMakarna.UseVisualStyleBackColor = false;
-            // 
-            // btnCorba
-            // 
-            this.btnCorba.BackColor = System.Drawing.Color.White;
-            this.btnCorba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCorba.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCorba.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnCorba.ForeColor = System.Drawing.Color.Transparent;
-            this.btnCorba.Image = ((System.Drawing.Image)(resources.GetObject("btnCorba.Image")));
-            this.btnCorba.Location = new System.Drawing.Point(140, 185);
-            this.btnCorba.Name = "btnCorba";
-            this.btnCorba.Size = new System.Drawing.Size(119, 74);
-            this.btnCorba.TabIndex = 5;
-            this.btnCorba.Text = "Çorba";
-            this.btnCorba.UseVisualStyleBackColor = false;
-            // 
-            // btnFastFood
-            // 
-            this.btnFastFood.BackColor = System.Drawing.Color.White;
-            this.btnFastFood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFastFood.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFastFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnFastFood.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFastFood.Image = ((System.Drawing.Image)(resources.GetObject("btnFastFood.Image")));
-            this.btnFastFood.Location = new System.Drawing.Point(6, 185);
-            this.btnFastFood.Name = "btnFastFood";
-            this.btnFastFood.Size = new System.Drawing.Size(119, 74);
-            this.btnFastFood.TabIndex = 4;
-            this.btnFastFood.Text = "Fast Food";
-            this.btnFastFood.UseVisualStyleBackColor = false;
-            // 
-            // btnSalata
-            // 
-            this.btnSalata.BackColor = System.Drawing.Color.White;
-            this.btnSalata.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSalata.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSalata.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSalata.ForeColor = System.Drawing.Color.Transparent;
-            this.btnSalata.Image = ((System.Drawing.Image)(resources.GetObject("btnSalata.Image")));
-            this.btnSalata.Location = new System.Drawing.Point(140, 105);
-            this.btnSalata.Name = "btnSalata";
-            this.btnSalata.Size = new System.Drawing.Size(119, 74);
-            this.btnSalata.TabIndex = 3;
-            this.btnSalata.Text = "Salata";
-            this.btnSalata.UseVisualStyleBackColor = false;
-            // 
-            // btnTatlılar
-            // 
-            this.btnTatlılar.BackColor = System.Drawing.Color.White;
-            this.btnTatlılar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTatlılar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTatlılar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnTatlılar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnTatlılar.Image = ((System.Drawing.Image)(resources.GetObject("btnTatlılar.Image")));
-            this.btnTatlılar.Location = new System.Drawing.Point(6, 105);
-            this.btnTatlılar.Name = "btnTatlılar";
-            this.btnTatlılar.Size = new System.Drawing.Size(119, 74);
-            this.btnTatlılar.TabIndex = 2;
-            this.btnTatlılar.Text = "Tatlılar";
-            this.btnTatlılar.UseVisualStyleBackColor = false;
-            // 
-            // btnIcecekler
-            // 
-            this.btnIcecekler.BackColor = System.Drawing.Color.White;
-            this.btnIcecekler.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIcecekler.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnIcecekler.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnIcecekler.ForeColor = System.Drawing.Color.Transparent;
-            this.btnIcecekler.Image = ((System.Drawing.Image)(resources.GetObject("btnIcecekler.Image")));
-            this.btnIcecekler.Location = new System.Drawing.Point(140, 25);
-            this.btnIcecekler.Name = "btnIcecekler";
-            this.btnIcecekler.Size = new System.Drawing.Size(119, 74);
-            this.btnIcecekler.TabIndex = 1;
-            this.btnIcecekler.Text = "İçecekler";
-            this.btnIcecekler.UseVisualStyleBackColor = false;
             // 
             // groupBox2
             // 
@@ -608,15 +489,8 @@
         #endregion
 
         private System.Windows.Forms.Label lblMasaNo;
-        private System.Windows.Forms.Button btnAnaYemek1;
+        private System.Windows.Forms.Button btnYemekler;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnAraSicak;
-        private System.Windows.Forms.Button btnMakarna;
-        private System.Windows.Forms.Button btnCorba;
-        private System.Windows.Forms.Button btnFastFood;
-        private System.Windows.Forms.Button btnSalata;
-        private System.Windows.Forms.Button btnTatlılar;
-        private System.Windows.Forms.Button btnIcecekler;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ListView lvMenu;
         private System.Windows.Forms.ColumnHeader columnHeader2;
