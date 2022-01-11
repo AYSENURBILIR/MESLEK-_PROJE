@@ -37,14 +37,6 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lvSiparisler = new System.Windows.Forms.ListView();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.txtAra = new System.Windows.Forms.TextBox();
             this.btn1 = new System.Windows.Forms.Button();
@@ -58,15 +50,16 @@
             this.btn7 = new System.Windows.Forms.Button();
             this.btnTemizle = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
-            this.txtAdet = new System.Windows.Forms.TextBox();
             this.btnCikis = new System.Windows.Forms.Button();
             this.btnGeriDon = new System.Windows.Forms.Button();
-            this.btnOdeme = new System.Windows.Forms.Button();
-            this.btnSiparis = new System.Windows.Forms.Button();
-            this.btnIptal = new System.Windows.Forms.Button();
+            this.btnTopla = new System.Windows.Forms.Button();
+            this.btnCikar = new System.Windows.Forms.Button();
+            this.btnCarpma = new System.Windows.Forms.Button();
+            this.btnBolme = new System.Windows.Forms.Button();
+            this.btnEsittir = new System.Windows.Forms.Button();
+            this.lblEkran = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMasaNo
@@ -153,63 +146,6 @@
             this.columnHeader4.Text = "Ürün Adı";
             this.columnHeader4.Width = 129;
             // 
-            // groupBox3
-            // 
-            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.lvSiparisler);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(389, 319);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(412, 250);
-            this.groupBox3.TabIndex = 9;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Menü";
-            // 
-            // lvSiparisler
-            // 
-            this.lvSiparisler.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader5,
-            this.columnHeader6,
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader1,
-            this.columnHeader9});
-            this.lvSiparisler.GridLines = true;
-            this.lvSiparisler.HideSelection = false;
-            this.lvSiparisler.Location = new System.Drawing.Point(6, 32);
-            this.lvSiparisler.Name = "lvSiparisler";
-            this.lvSiparisler.Size = new System.Drawing.Size(400, 203);
-            this.lvSiparisler.TabIndex = 0;
-            this.lvSiparisler.UseCompatibleStateImageBehavior = false;
-            this.lvSiparisler.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Ürün Adeti";
-            this.columnHeader5.Width = 122;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Ürün Adı";
-            this.columnHeader6.Width = 129;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Ürün Fiyatı";
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "UrunId";
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "SatisId";
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "SilinenId";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -235,140 +171,143 @@
             this.btn1.BackColor = System.Drawing.Color.LightCoral;
             this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn1.ForeColor = System.Drawing.Color.Transparent;
-            this.btn1.Location = new System.Drawing.Point(888, 114);
+            this.btn1.Location = new System.Drawing.Point(425, 362);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(81, 63);
             this.btn1.TabIndex = 12;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn2
             // 
             this.btn2.BackColor = System.Drawing.Color.LightCoral;
             this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn2.ForeColor = System.Drawing.Color.Transparent;
-            this.btn2.Location = new System.Drawing.Point(975, 114);
+            this.btn2.Location = new System.Drawing.Point(512, 362);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(81, 63);
             this.btn2.TabIndex = 13;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn3
             // 
             this.btn3.BackColor = System.Drawing.Color.LightCoral;
             this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn3.ForeColor = System.Drawing.Color.Transparent;
-            this.btn3.Location = new System.Drawing.Point(1062, 114);
+            this.btn3.Location = new System.Drawing.Point(599, 362);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(81, 63);
             this.btn3.TabIndex = 14;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn6
             // 
             this.btn6.BackColor = System.Drawing.Color.LightCoral;
             this.btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn6.ForeColor = System.Drawing.Color.Transparent;
-            this.btn6.Location = new System.Drawing.Point(1062, 184);
+            this.btn6.Location = new System.Drawing.Point(599, 432);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(81, 63);
             this.btn6.TabIndex = 17;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn5
             // 
             this.btn5.BackColor = System.Drawing.Color.LightCoral;
             this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn5.ForeColor = System.Drawing.Color.Transparent;
-            this.btn5.Location = new System.Drawing.Point(975, 184);
+            this.btn5.Location = new System.Drawing.Point(512, 432);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(81, 63);
             this.btn5.TabIndex = 16;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn4
             // 
             this.btn4.BackColor = System.Drawing.Color.LightCoral;
             this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn4.ForeColor = System.Drawing.Color.Transparent;
-            this.btn4.Location = new System.Drawing.Point(888, 184);
+            this.btn4.Location = new System.Drawing.Point(425, 432);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(81, 63);
             this.btn4.TabIndex = 15;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn9
             // 
             this.btn9.BackColor = System.Drawing.Color.LightCoral;
             this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn9.ForeColor = System.Drawing.Color.Transparent;
-            this.btn9.Location = new System.Drawing.Point(1062, 257);
+            this.btn9.Location = new System.Drawing.Point(599, 505);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(81, 63);
             this.btn9.TabIndex = 20;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btn8
             // 
             this.btn8.BackColor = System.Drawing.Color.LightCoral;
             this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn8.ForeColor = System.Drawing.Color.Transparent;
-            this.btn8.Location = new System.Drawing.Point(975, 257);
+            this.btn8.Location = new System.Drawing.Point(512, 505);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(81, 63);
             this.btn8.TabIndex = 19;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn7
             // 
             this.btn7.BackColor = System.Drawing.Color.LightCoral;
             this.btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn7.ForeColor = System.Drawing.Color.Transparent;
-            this.btn7.Location = new System.Drawing.Point(888, 257);
+            this.btn7.Location = new System.Drawing.Point(425, 505);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(81, 63);
             this.btn7.TabIndex = 18;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btnTemizle
             // 
             this.btnTemizle.BackColor = System.Drawing.Color.LightCoral;
             this.btnTemizle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnTemizle.ForeColor = System.Drawing.Color.Transparent;
-            this.btnTemizle.Location = new System.Drawing.Point(888, 328);
+            this.btnTemizle.Location = new System.Drawing.Point(425, 576);
             this.btnTemizle.Name = "btnTemizle";
-            this.btnTemizle.Size = new System.Drawing.Size(168, 63);
+            this.btnTemizle.Size = new System.Drawing.Size(81, 63);
             this.btnTemizle.TabIndex = 21;
             this.btnTemizle.Text = "C";
             this.btnTemizle.UseVisualStyleBackColor = false;
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
             // 
             // btn0
             // 
             this.btn0.BackColor = System.Drawing.Color.LightCoral;
             this.btn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn0.ForeColor = System.Drawing.Color.Transparent;
-            this.btn0.Location = new System.Drawing.Point(1062, 328);
+            this.btn0.Location = new System.Drawing.Point(515, 576);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(81, 63);
             this.btn0.TabIndex = 22;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = false;
-            // 
-            // txtAdet
-            // 
-            this.txtAdet.Location = new System.Drawing.Point(888, 71);
-            this.txtAdet.Multiline = true;
-            this.txtAdet.Name = "txtAdet";
-            this.txtAdet.Size = new System.Drawing.Size(255, 37);
-            this.txtAdet.TabIndex = 23;
+            this.btn0.Click += new System.EventHandler(this.btn0_Click);
             // 
             // btnCikis
             // 
@@ -401,47 +340,81 @@
             this.btnGeriDon.UseVisualStyleBackColor = false;
             this.btnGeriDon.Click += new System.EventHandler(this.btnGeriDon_Click);
             // 
-            // btnOdeme
+            // btnTopla
             // 
-            this.btnOdeme.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnOdeme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnOdeme.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOdeme.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOdeme.ForeColor = System.Drawing.Color.Black;
-            this.btnOdeme.Location = new System.Drawing.Point(999, 433);
-            this.btnOdeme.Name = "btnOdeme";
-            this.btnOdeme.Size = new System.Drawing.Size(144, 74);
-            this.btnOdeme.TabIndex = 8;
-            this.btnOdeme.Text = "Ödeme";
-            this.btnOdeme.UseVisualStyleBackColor = false;
+            this.btnTopla.BackColor = System.Drawing.Color.LightCoral;
+            this.btnTopla.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnTopla.ForeColor = System.Drawing.Color.Transparent;
+            this.btnTopla.Location = new System.Drawing.Point(686, 363);
+            this.btnTopla.Name = "btnTopla";
+            this.btnTopla.Size = new System.Drawing.Size(81, 63);
+            this.btnTopla.TabIndex = 28;
+            this.btnTopla.Text = "+";
+            this.btnTopla.UseVisualStyleBackColor = false;
+            this.btnTopla.Click += new System.EventHandler(this.btnTopla_Click);
             // 
-            // btnSiparis
+            // btnCikar
             // 
-            this.btnSiparis.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSiparis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSiparis.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSiparis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSiparis.ForeColor = System.Drawing.Color.Black;
-            this.btnSiparis.Location = new System.Drawing.Point(888, 433);
-            this.btnSiparis.Name = "btnSiparis";
-            this.btnSiparis.Size = new System.Drawing.Size(105, 74);
-            this.btnSiparis.TabIndex = 26;
-            this.btnSiparis.Text = "Sipariş";
-            this.btnSiparis.UseVisualStyleBackColor = false;
+            this.btnCikar.BackColor = System.Drawing.Color.LightCoral;
+            this.btnCikar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCikar.ForeColor = System.Drawing.Color.Transparent;
+            this.btnCikar.Location = new System.Drawing.Point(686, 431);
+            this.btnCikar.Name = "btnCikar";
+            this.btnCikar.Size = new System.Drawing.Size(81, 63);
+            this.btnCikar.TabIndex = 29;
+            this.btnCikar.Text = "-";
+            this.btnCikar.UseVisualStyleBackColor = false;
+            this.btnCikar.Click += new System.EventHandler(this.btnCikar_Click);
             // 
-            // btnIptal
+            // btnCarpma
             // 
-            this.btnIptal.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnIptal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIptal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnIptal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnIptal.ForeColor = System.Drawing.Color.Black;
-            this.btnIptal.Location = new System.Drawing.Point(888, 513);
-            this.btnIptal.Name = "btnIptal";
-            this.btnIptal.Size = new System.Drawing.Size(255, 74);
-            this.btnIptal.TabIndex = 27;
-            this.btnIptal.Text = "İptal";
-            this.btnIptal.UseVisualStyleBackColor = false;
+            this.btnCarpma.BackColor = System.Drawing.Color.LightCoral;
+            this.btnCarpma.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCarpma.ForeColor = System.Drawing.Color.Transparent;
+            this.btnCarpma.Location = new System.Drawing.Point(686, 503);
+            this.btnCarpma.Name = "btnCarpma";
+            this.btnCarpma.Size = new System.Drawing.Size(81, 63);
+            this.btnCarpma.TabIndex = 30;
+            this.btnCarpma.Text = "*";
+            this.btnCarpma.UseVisualStyleBackColor = false;
+            this.btnCarpma.Click += new System.EventHandler(this.btnCarpma_Click);
+            // 
+            // btnBolme
+            // 
+            this.btnBolme.BackColor = System.Drawing.Color.LightCoral;
+            this.btnBolme.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBolme.ForeColor = System.Drawing.Color.Transparent;
+            this.btnBolme.Location = new System.Drawing.Point(686, 576);
+            this.btnBolme.Name = "btnBolme";
+            this.btnBolme.Size = new System.Drawing.Size(81, 63);
+            this.btnBolme.TabIndex = 31;
+            this.btnBolme.Text = "/";
+            this.btnBolme.UseVisualStyleBackColor = false;
+            this.btnBolme.Click += new System.EventHandler(this.btnBolme_Click);
+            // 
+            // btnEsittir
+            // 
+            this.btnEsittir.BackColor = System.Drawing.Color.LightCoral;
+            this.btnEsittir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnEsittir.ForeColor = System.Drawing.Color.Transparent;
+            this.btnEsittir.Location = new System.Drawing.Point(602, 575);
+            this.btnEsittir.Name = "btnEsittir";
+            this.btnEsittir.Size = new System.Drawing.Size(81, 63);
+            this.btnEsittir.TabIndex = 32;
+            this.btnEsittir.Text = "=";
+            this.btnEsittir.UseVisualStyleBackColor = false;
+            this.btnEsittir.Click += new System.EventHandler(this.btnEsittir_Click);
+            // 
+            // lblEkran
+            // 
+            this.lblEkran.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblEkran.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblEkran.Location = new System.Drawing.Point(425, 304);
+            this.lblEkran.Name = "lblEkran";
+            this.lblEkran.Size = new System.Drawing.Size(342, 42);
+            this.lblEkran.TabIndex = 33;
+            this.lblEkran.Text = "0";
+            this.lblEkran.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // frmSiparis
             // 
@@ -451,12 +424,14 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1191, 734);
-            this.Controls.Add(this.btnIptal);
-            this.Controls.Add(this.btnSiparis);
-            this.Controls.Add(this.btnOdeme);
+            this.Controls.Add(this.lblEkran);
+            this.Controls.Add(this.btnEsittir);
+            this.Controls.Add(this.btnBolme);
+            this.Controls.Add(this.btnCarpma);
+            this.Controls.Add(this.btnCikar);
+            this.Controls.Add(this.btnTopla);
             this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.btnGeriDon);
-            this.Controls.Add(this.txtAdet);
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btnTemizle);
             this.Controls.Add(this.btn9);
@@ -470,7 +445,6 @@
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.txtAra);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblMasaNo);
@@ -480,7 +454,6 @@
             this.Load += new System.EventHandler(this.frmSiparis_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -496,14 +469,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ListView lvSiparisler;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
-        private System.Windows.Forms.ColumnHeader columnHeader8;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtAra;
         private System.Windows.Forms.Button btn1;
@@ -517,11 +482,13 @@
         private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.Button btnTemizle;
         private System.Windows.Forms.Button btn0;
-        private System.Windows.Forms.TextBox txtAdet;
         private System.Windows.Forms.Button btnCikis;
         private System.Windows.Forms.Button btnGeriDon;
-        private System.Windows.Forms.Button btnOdeme;
-        private System.Windows.Forms.Button btnSiparis;
-        private System.Windows.Forms.Button btnIptal;
+        private System.Windows.Forms.Button btnTopla;
+        private System.Windows.Forms.Button btnCikar;
+        private System.Windows.Forms.Button btnCarpma;
+        private System.Windows.Forms.Button btnBolme;
+        private System.Windows.Forms.Button btnEsittir;
+        private System.Windows.Forms.Label lblEkran;
     }
 }

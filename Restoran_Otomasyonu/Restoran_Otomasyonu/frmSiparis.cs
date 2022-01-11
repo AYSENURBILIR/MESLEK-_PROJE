@@ -12,6 +12,9 @@ namespace Restoran_Otomasyonu
 {
     public partial class frmSiparis : Form
     {
+        private char _islem;
+        private bool _ekranTemizle;
+        private int _ilkSayi;
         public frmSiparis()
         {
             InitializeComponent();
@@ -31,49 +34,12 @@ namespace Restoran_Otomasyonu
             this.Close();
             frm.Show();
         }
-        //Hesap İşlemi
-        void islem(object sender, EventArgs e)
-        {
-            Button btn = sender as Button;
-            //Yazdığımız sayıların ekranda gözükmesi
-            switch (btn.Name)
-            {
-                case "btn1":
-                    txtAdet.Text += (1).ToString();
-                    break;
-                case "btn2":
-                    txtAdet.Text += (2).ToString();
-                    break;
-                case "btn3":
-                    txtAdet.Text += (3).ToString();
-                    break;
-                case "btn4":
-                    txtAdet.Text += (4).ToString();
-                    break;
-                case "btn5":
-                    txtAdet.Text += (5).ToString();
-                    break;
-                case "btn6":
-                    txtAdet.Text += (6).ToString();
-                    break;
-                case "btn7":
-                    txtAdet.Text += (7).ToString();
-                    break;
-                case "btn8":
-                    txtAdet.Text += (8).ToString();
-                    break;
-                case "btn9":
-                    txtAdet.Text += (9).ToString();
-                    break;
-                case "btn0":
-                    txtAdet.Text += (0).ToString();
-                    break;
-                default:
-                    MessageBox.Show("Sayı giriniz:");
-                    break;
+      
+   
 
-            }
-        }
+
+
+
         private void frmSiparis_Load(object sender, EventArgs e)
         {
             /*    lblMasaNo.Text = cGeneral._ButtonValue;
@@ -90,17 +56,17 @@ namespace Restoran_Otomasyonu
                  }
                */
 
-            btn1.Click += new EventHandler(islem);
-            btn2.Click += new EventHandler(islem);
-            btn3.Click += new EventHandler(islem);
-            btn4.Click += new EventHandler(islem);
-            btn5.Click += new EventHandler(islem);
-            btn6.Click += new EventHandler(islem);
-            btn7.Click += new EventHandler(islem);
-            btn8.Click += new EventHandler(islem);
-            btn9.Click += new EventHandler(islem);
-            btn0.Click += new EventHandler(islem);
-           
+            /* btn1.Click += new EventHandler(islem);
+             btn2.Click += new EventHandler(islem);
+             btn3.Click += new EventHandler(islem);
+             btn4.Click += new EventHandler(islem);
+             btn5.Click += new EventHandler(islem);
+             btn6.Click += new EventHandler(islem);
+             btn7.Click += new EventHandler(islem);
+             btn8.Click += new EventHandler(islem);
+             btn9.Click += new EventHandler(islem);
+             btn0.Click += new EventHandler(islem);
+          */
         }
         cUrunCesitleri Uc = new cUrunCesitleri();
 
@@ -108,6 +74,175 @@ namespace Restoran_Otomasyonu
         {
             
             Uc.getbyProductTypes(lvMenu, btnYemekler);
+        }
+        //Hesap Makinesi
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            if (_ekranTemizle)
+            {
+                lblEkran.Text = "";
+                _ekranTemizle = false;
+            }
+            if (lblEkran.Text == "0") lblEkran.Text = "";//Ekrandaki 0'ı siler.
+            lblEkran.Text += "1";
+
+        }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            if (_ekranTemizle) 
+            {
+                lblEkran.Text = "";
+                _ekranTemizle = false;
+            }
+            if (lblEkran.Text == "0") lblEkran.Text = "";//Ekrandaki 0'ı siler.
+            lblEkran.Text += "2";
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            if (_ekranTemizle)
+            {
+                lblEkran.Text = "";
+                _ekranTemizle = false;
+            }
+            if (lblEkran.Text == "0") lblEkran.Text = "";//Ekrandaki 0'ı siler.
+            lblEkran.Text += "3";
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            if (_ekranTemizle)
+            {
+                lblEkran.Text = "";
+                _ekranTemizle = false;
+            }
+            if (lblEkran.Text == "0") lblEkran.Text = "";//Ekrandaki 0'ı siler.
+            lblEkran.Text += "4";
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            if (_ekranTemizle)
+            {
+                lblEkran.Text = "";
+                _ekranTemizle = false;
+            }
+            if (lblEkran.Text == "0") lblEkran.Text = "";//Ekrandaki 0'ı siler.
+            lblEkran.Text += "5";
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            if (_ekranTemizle)
+            {
+                lblEkran.Text = "";
+                _ekranTemizle = false;
+            }
+            if (lblEkran.Text == "0") lblEkran.Text = "";//Ekrandaki 0'ı siler.
+            lblEkran.Text += "6";
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            if (_ekranTemizle)
+            {
+                lblEkran.Text = "";
+                _ekranTemizle = false;
+            }
+            if (lblEkran.Text == "0") lblEkran.Text = "";//Ekrandaki 0'ı siler.
+            lblEkran.Text += "7";
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            if (_ekranTemizle)
+            {
+                lblEkran.Text = "";
+                _ekranTemizle = false;
+            }
+            if (lblEkran.Text == "0") lblEkran.Text = "";//Ekrandaki 0'ı siler.
+            lblEkran.Text += "8";
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            if (_ekranTemizle)
+            {
+                lblEkran.Text = "";
+                _ekranTemizle = false;
+            }
+            if (lblEkran.Text == "0") lblEkran.Text = "";//Ekrandaki 0'ı siler.
+            lblEkran.Text += "9";
+        }
+
+        private void btn0_Click(object sender, EventArgs e)
+        {
+            if (_ekranTemizle) lblEkran.Text = "";
+            if (lblEkran.Text == "0") lblEkran.Text = "";//Ekrandaki 0'ı siler.
+            lblEkran.Text += "0";
+        }
+
+        private void btnTopla_Click(object sender, EventArgs e)
+        {
+            _islem = '+';
+            _ekranTemizle = true;
+            _ilkSayi = Convert.ToInt32(lblEkran.Text);
+        }
+
+        private void btnEsittir_Click(object sender, EventArgs e)
+        {
+            int ikincisayi = Convert.ToInt32(lblEkran.Text);
+            int sonuc;
+            switch (_islem)
+            {
+                case '+':
+                    sonuc = _ilkSayi + ikincisayi;
+                    break;
+
+                case '-':
+                    sonuc = _ilkSayi - ikincisayi;
+                    break;
+
+                case '*':
+                    sonuc = _ilkSayi * ikincisayi;
+                    break;
+
+                case '/':
+                    sonuc = _ilkSayi / ikincisayi;
+                    break;
+                default:
+                    sonuc = 0;
+                    break;
+            }
+            lblEkran.Text = Convert.ToString(sonuc);
+        }
+
+        private void btnCikar_Click(object sender, EventArgs e)
+        {
+            _islem = '-';
+            _ekranTemizle = true;
+            _ilkSayi = Convert.ToInt32(lblEkran.Text);
+
+        }
+
+        private void btnCarpma_Click(object sender, EventArgs e)
+        {
+            _islem = '*';
+            _ekranTemizle = true;
+            _ilkSayi = Convert.ToInt32(lblEkran.Text);
+        }
+
+        private void btnBolme_Click(object sender, EventArgs e)
+        {
+            _islem = '/';
+            _ekranTemizle = true;
+            _ilkSayi = Convert.ToInt32(lblEkran.Text);
+        }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            lblEkran.Text = "0";
         }
     }
 }
